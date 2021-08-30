@@ -3,8 +3,9 @@
 @import 'shared.scss';
 
 .main {
+    transform: translate(374.22px, 41.73px);
+    margin-top: 20px;
     @include Size(1171.78, 632.52);
-    transform: translate(374.22px, 91.73px);
     header {
         padding-top: 7px;
         h1 {
