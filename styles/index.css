@@ -1,33 +1,17 @@
-main {
-  width: 1172.78px;
-  height: 632.52px;
-  margin: 91px 374px 355px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
+/* Error: expected ";".
+ *    ,
+ * 81 |         border: 7px solid $color9: !important;
+ *    |                                  ^
+ *    '
+ *   styles\index.scss 81:34  root stylesheet */
 
-main h1 {
-  font-weight: 300;
-  font-size: 30px;
-  font-family: 'lato';
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: expected ";".\a    \2577 \a 81 \2502          border: 7px solid $color9: !important;\d\a    \2502                                   ^\a    \2575 \a   styles\\index.scss 81:34  root stylesheet';
 }
-
-main p.p2-tag-laying {
-  color: #2C3E50;
-  font-family: 'lato';
-  font-size: 14px;
-  font-weight: 900;
-  letter-spacing: 1.3px;
-}
-
-main p {
-  width: 357.05px;
-  height: 73.14px;
-  color: #A1B1BC;
-  font-family: 'lato';
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-}
-/*# sourceMappingURL=index.css.map */

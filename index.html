@@ -1,68 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;0,900;1,300&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ad26201953.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/index.css">
+    <title>Sass</title>
 </head>
+
 <body>
-    
-    <main>
+    <section class="main">
+        <header>
+            <h1>Clear Alerts</h1>
+        </header>
+        <div class="firstSection">
+            <div class="firstSection-first-box">
+                <div class="circle-box">
+                    <p>!</p>
+                </div>
+                <div class="box-text">
+                    <p>YOUR MESSAGE TITLE HERE</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Nulla vel mollis turpis. Sed sed nisi gravida!</p>
+                </div>
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="firstSection-first-box firstSection-second-box">
+                <div class="circle-box green">
+                    <p><i class="fas fa-check"></i></p>
+                </div>
+                <div class="box-text">
+                    <p>YOUR MESSAGE TITLE HERE</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Nulla vel mollis turpis. Sed sed nisi gravida!</p>
+                </div>
+                <i class="fas fa-times"></i>
+            </div>
 
-    <h1>Clear Alerts</h1>
-    <div class="container1">
-        <div class="icon1">
-            <div class="mainIcon-bg"></div>
-            <div class="mainIcon-inside"></div> 
         </div>
-        <p>YOUR MESSAGE TITLE HERE</p>
-        <p class="p2-tag-laying ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel mollis turpis. 
-            Sed sed nisi gravida!</p>
-    </div>
-    <div class="container1">
-        <div class="icon1">
-            <div class="mainIcon-bg"></div>
-            <div class="mainIcon-inside"></div> 
-        </div>
-        <p>YOUR MESSAGE TITLE HERE</p>
-        <p class="p2-tag-laying ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel mollis turpis. 
-            Sed sed nisi gravida!</p>
-    </div>
-    <div class="container1">
-        <div class="icon1">
-            <div class="mainIcon-bg"></div>
-            <div class="mainIcon-inside"></div> 
-        </div>
-        <p>YOUR MESSAGE TITLE HERE</p>
-        <p class="p2-tag-laying ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel mollis turpis. 
-            Sed sed nisi gravida!</p>
-    </div>
-    <div class="container1">
-        <div class="icon1">
-            <div class="mainIcon-bg"></div>
-            <div class="mainIcon-inside"></div> 
-        </div>
-        <p>YOUR MESSAGE TITLE HERE</p>
-        <p class="p2-tag-laying ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel mollis turpis. 
-            Sed sed nisi gravida!</p>
-    </div>
+        <div class="SecondSection">
+            <div class="SecondSection-first-box">
+                <div class="circle-box-middle red">
+                    <i id="close" class="fas fa-times"></i>
+                </div>
+                <div class="box-text">
+                    <p>YOUR MESSAGE TITLE HERE</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Nulla vel mollis turpis. Sed sed nisi gravida!</p>
+                </div>
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="SecondSection-first-box firstSection-second-box">
+                <div class="circle-box-middle blue">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <div class="box-text">
+                    <p>YOUR MESSAGE TITLE HERE</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Nulla vel mollis turpis. Sed sed nisi gravida!</p>
+                </div>
+                <i class="fas fa-times"></i>
+            </div>
 
-    <div class="container1">
-        <div class="icon1">
-            <div class="mainIcon-bg"></div>
-            <div class="mainIcon-inside"></div> 
         </div>
-        <p>YOUR MESSAGE TITLE HERE</p>
-        <p class="p2-tag-laying ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel mollis turpis. 
-            Sed sed nisi gravida!</p>
-    </div>
+        <div class="footer">
+            <div class="circle-box-middle iasamnisferi">
+                <i class="fas fa-info"></i>
 
+            </div>
+            <div class="box-text">
+                <p>YOUR MESSAGE TITLE HERE</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel mollis turpis. Sed sed nisi gravida, lacinia massa vitae, mollis lacus. Suspendisse nulla velit, aliquet<br> nec tempor ac, mattis nec orci. Ut vitae felis semper, sagittis
+                    orci at, tincidunt purus. Sed pharetra efficitur turpis fermentum sagittis.</p>
+            </div>
+            <i id="lastClose" class="fas fa-times"></i>
+        </div>
 
-    </main>
+    </section>
+
 </body>
+
 </html>

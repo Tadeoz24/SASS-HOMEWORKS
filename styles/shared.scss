@@ -1,24 +1,20 @@
-@mixin h1-tag-laying {
-    font-weight: 300;
-    font-size: 30px;
-    font-family: 'lato';
+@mixin Size($width, $height) {
+    width: $width +px;
+    height: $height +px;
 }
 
-@mixin p1-tag-laying {
-    color: #2C3E50;
-    font-family: 'lato';
-    font-size: 14px;
-    font-weight: 900;
-    letter-spacing: 1.3px;
+@mixin Font($size, $height, $weight, $color) {
+    font-size: $size +px;
+    line-height: $height +px;
+    font-family: 'Lato', sans-serif;
+    font-weight: $weight;
+    color: $color;
 }
 
-
-@mixin p2-tag-laying {
-    width: 357.05px;
-    height: 73.14px;
-    color:#A1B1BC ;
-    font-family: 'lato';
-    font-size: 14px;
-    font-weight:400;
-    line-height: 24px;
+@mixin SquareOrCircle($size, $circle: false) {
+    width: $size +px;
+    height: $size +px;
+    @if $circle {
+        border-radius: 50%;
+    }
 }
