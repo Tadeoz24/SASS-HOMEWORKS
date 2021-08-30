@@ -1,0 +1,158 @@
+@import 'palette.scss';
+@import 'reset.scss';
+@import 'shared.scss';
+
+.main {
+    @include Size(1171.78, 632.52);
+    transform: translate(374.22px, 91.73px);
+    header {
+        padding-top: 7px;
+        h1 {
+            @include Font(30, 26, 300, $color1);
+        }
+    }
+    .firstSection {
+        display: flex;
+        margin-top: 55px;
+        .firstSection-first-box {
+            background-color: $color3;
+            @include Size(570, 147);
+            border: 1px solid $color15;
+            border-radius: 10px;
+            display: flex;
+            .circle-box {
+                &:first-child {
+                    margin-top: 43px;
+                    margin-left: 50px;
+                    @include SquareOrCircle(55, $circle: true);
+                    border: 5px solid $color2;
+                    background: $color3;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    p {
+                        @include Font(32, 26, 900, $color4);
+                    }
+                }
+            }
+        }
+    }
+    .fa-times {
+        transform: translate(94px, 17px);
+        color: $color4;
+        font-size: 14px;
+    }
+    .box-text {
+        transform: translate(29px, 34px);
+        p {
+            &:first-child {
+                @include Font(14, 26, 900, $color1);
+                word-spacing: 3px;
+                letter-spacing: 1px;
+            }
+            &:last-child {
+                @include Font(14, 24, 400, $color5);
+                margin-top: 6px;
+            }
+        }
+    }
+    .firstSection-second-box {
+        margin-left: 28px;
+        background-color: $color20 !important;
+    }
+    .fa-check {
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 26px;
+        color: $color6;
+        padding-top: -2px;
+    }
+    .green {
+        @include SquareOrCircle(30, $circle: true);
+        width: 50px !important;
+        height: 50px !important;
+        border-radius: 50%;
+        border: 7px solid $color7 !important;
+        background: $color8 !important;
+    }
+    .red {
+        @include SquareOrCircle(30, $circle: true);
+        width: 50px !important;
+        height: 50px !important;
+        border-radius: 50%;
+        border: 7px solid $color9 !important;
+        background: $color10 !important;
+    }
+    .iasamnisferi {
+        @include SquareOrCircle(30, $circle: true);
+        width: 50px !important;
+        height: 50px !important;
+        border-radius: 50%;
+        border: 7px solid $color11 !important;
+        background: $color12 !important;
+    }
+    .blue {
+        @include SquareOrCircle(30, $circle: true);
+        width: 50px !important;
+        height: 50px !important;
+        border-radius: 50%;
+        border: 7px solid $color13 !important;
+        background: $color14 !important;
+    }
+
+    .greenimport{
+        background: $color19 !important;
+    }
+    .SecondSection {
+        display: flex;
+        margin-top: 31px;
+        .SecondSection-first-box {
+            background-color:$color21 ;
+            display: flex;
+            @include Size(570, 147);
+            border: 1px solid $color15;
+            border-radius: 10px;
+            display: flex;
+        }
+    }
+    .circle-box-middle {
+        margin-top: 43px;
+        margin-left: 50px;
+        @include SquareOrCircle(55, $circle: true);
+        border: 5px solid $color9;
+        background: $color10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        #close {
+            transform: translate(1px, -2px);
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 26px;
+            color: $color18;
+        }
+    }
+    .fa-bolt {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 26px;
+        color: $color16;
+    }
+    .footer {
+        background-color: $color22;
+        @include Size(1170, 150);
+        border: 1px solid $color15;
+        border-radius: 10px;
+        transform: translate(0, 30px);
+        display: flex;
+        .fa-info {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 26px;
+            color: $color17;
+        }
+        #lastClose {
+            transform: translate(51px, 17px);
+        }
+    }
+}

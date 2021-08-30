@@ -1,0 +1,20 @@
+@mixin Size($width, $height) {
+    width: $width +px;
+    height: $height +px;
+}
+
+@mixin Font($size, $height, $weight, $color) {
+    font-size: $size +px;
+    line-height: $height +px;
+    font-family: 'Lato', sans-serif;
+    font-weight: $weight;
+    color: $color;
+}
+
+@mixin SquareOrCircle($size, $circle: false) {
+    width: $size +px;
+    height: $size +px;
+    @if $circle {
+        border-radius: 50%;
+    }
+}
